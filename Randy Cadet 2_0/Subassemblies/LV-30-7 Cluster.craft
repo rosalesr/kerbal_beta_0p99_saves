@@ -1,0 +1,1559 @@
+ship = LV-30-7 Cluster
+version = 0.90.0
+description = No description.
+type = None
+size = 4.006783,3.058766,4.098128
+PART
+{
+	part = trussPiece1x_4276728138
+	partName = Part
+	pos = -0.4003201,7.294708,0.7693963
+	attPos = 0,0,0
+	attPos0 = -0.4003201,7.294708,0.7693963
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = liquidEngine_4276704178
+	link = trussPiece1x_4276727708
+	link = trussPiece1x_4276696964
+	link = trussPiece1x_4276696780
+	link = trussPiece1x_4276696596
+	link = trussPiece1x_4276696412
+	link = trussPiece1x_4276696228
+	attN = bottom,liquidEngine_4276704178
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = liquidEngine_4276704178
+	partName = Part
+	pos = -0.4003201,5.833608,0.7693963
+	attPos = 0,0,0
+	attPos0 = 0,-1.4611,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = 1
+	sqor = 5
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = top,trussPiece1x_4276728138
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = trussPiece1x_4276727708
+	partName = Part
+	pos = 0.4849172,7.416027,0.7693963
+	attPos = 0,0,0
+	attPos0 = 0.8852373,0.1213188,1.490117E-08
+	rot = 0.5,0.5,-0.5,0.5
+	attRot = 0,0,0,1
+	attRot0 = 0.5,0.5,-0.5,0.5
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece1x_4276727150
+	sym = trussPiece1x_4276696964
+	sym = trussPiece1x_4276696780
+	sym = trussPiece1x_4276696596
+	sym = trussPiece1x_4276696412
+	sym = trussPiece1x_4276696228
+	srfN = srfAttach,trussPiece1x_4276728138
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece1x_4276727150
+	partName = Part
+	pos = 0.9749181,7.132095,0.7693965
+	attPos = 0,0,0
+	attPos0 = -1.341105E-07,0.4900009,0.2839317
+	rot = 0.7071066,-7.105427E-15,-0.707107,1.192093E-07
+	attRot = 0.7071068,0,0,0.7071068
+	attRot0 = 0.7071068,-2.384186E-07,-1.192093E-07,0.7071069
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = liquidEngine_4276705708
+	sym = trussPiece1x_4276696940
+	sym = trussPiece1x_4276696756
+	sym = trussPiece1x_4276696572
+	sym = trussPiece1x_4276696388
+	sym = trussPiece1x_4276696204
+	srfN = srfAttach,trussPiece1x_4276727708
+	attN = top,liquidEngine_4276705708
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = liquidEngine_4276705708
+	partName = Part
+	pos = 0.9749184,5.670995,0.7693965
+	attPos = 0,0,0
+	attPos0 = 1.569159E-07,1.4611,-1.513302E-07
+	rot = -2.980232E-08,-2.980232E-08,-2.980232E-08,1
+	attRot = 0,0,0,1
+	attRot0 = -0.7071066,1.065814E-14,0.707107,1.192093E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = 0
+	sqor = 5
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = liquidEngine_4276696916
+	sym = liquidEngine_4276696732
+	sym = liquidEngine_4276696548
+	sym = liquidEngine_4276696364
+	sym = liquidEngine_4276696180
+	attN = top,trussPiece1x_4276727150
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = trussPiece1x_4276696964
+	partName = Part
+	pos = 0.04229856,7.416027,0.002758324
+	attPos = 0,0,0
+	attPos0 = 0.4426186,0.1213188,-0.766638
+	rot = 0.1830127,0.6830127,-0.6830127,0.1830127
+	attRot = 0,0,0,1
+	attRot0 = 0.1830127,0.6830127,-0.6830127,0.1830127
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece1x_4276696940
+	sym = trussPiece1x_4276727708
+	sym = trussPiece1x_4276696780
+	sym = trussPiece1x_4276696596
+	sym = trussPiece1x_4276696412
+	sym = trussPiece1x_4276696228
+	srfN = srfAttach,trussPiece1x_4276728138
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece1x_4276696940
+	partName = Part
+	pos = 0.2872991,7.132095,-0.421595
+	attPos = 0,0,0
+	attPos0 = -1.341105E-07,0.4900009,0.2839317
+	rot = 0.2588188,8.142145E-08,-0.9659259,9.632262E-08
+	attRot = 0.7071068,0,0,0.7071068
+	attRot0 = 0.7071068,-2.384186E-07,-1.192093E-07,0.7071069
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = liquidEngine_4276696916
+	sym = trussPiece1x_4276727150
+	sym = trussPiece1x_4276696756
+	sym = trussPiece1x_4276696572
+	sym = trussPiece1x_4276696388
+	sym = trussPiece1x_4276696204
+	srfN = srfAttach,trussPiece1x_4276696964
+	attN = top,liquidEngine_4276696916
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = liquidEngine_4276696916
+	partName = Part
+	pos = 0.2872994,5.670995,-0.4215953
+	attPos = 0,0,0
+	attPos0 = 1.569159E-07,1.4611,-1.513302E-07
+	rot = -5.960464E-08,0.5000001,0,0.8660256
+	attRot = 0,0,0,1
+	attRot0 = -0.7071066,1.065814E-14,0.707107,1.192093E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = 2
+	sqor = 5
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = liquidEngine_4276705708
+	sym = liquidEngine_4276696732
+	sym = liquidEngine_4276696548
+	sym = liquidEngine_4276696364
+	sym = liquidEngine_4276696180
+	attN = top,trussPiece1x_4276696940
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = trussPiece1x_4276696780
+	partName = Part
+	pos = -0.8429388,7.416027,0.002758324
+	attPos = 0,0,0
+	attPos0 = -0.4426187,0.1213188,-0.766638
+	rot = -0.1830127,0.6830127,-0.6830127,-0.1830127
+	attRot = 0,0,0,1
+	attRot0 = -0.1830127,0.6830127,-0.6830127,-0.1830127
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece1x_4276696756
+	sym = trussPiece1x_4276727708
+	sym = trussPiece1x_4276696964
+	sym = trussPiece1x_4276696596
+	sym = trussPiece1x_4276696412
+	sym = trussPiece1x_4276696228
+	srfN = srfAttach,trussPiece1x_4276728138
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece1x_4276696756
+	partName = Part
+	pos = -1.087939,7.132095,-0.421595
+	attPos = 0,0,0
+	attPos0 = -1.341105E-07,0.4900009,0.2839317
+	rot = -0.2588193,9.739247E-08,-0.9659258,6.652029E-08
+	attRot = 0.7071068,0,0,0.7071068
+	attRot0 = 0.7071068,-2.384186E-07,-1.192093E-07,0.7071069
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = liquidEngine_4276696732
+	sym = trussPiece1x_4276727150
+	sym = trussPiece1x_4276696940
+	sym = trussPiece1x_4276696572
+	sym = trussPiece1x_4276696388
+	sym = trussPiece1x_4276696204
+	srfN = srfAttach,trussPiece1x_4276696780
+	attN = top,liquidEngine_4276696732
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = liquidEngine_4276696732
+	partName = Part
+	pos = -1.087939,5.670995,-0.4215955
+	attPos = 0,0,0
+	attPos0 = 1.569159E-07,1.4611,-1.513302E-07
+	rot = -5.960464E-08,0.8660256,0,0.5000001
+	attRot = 0,0,0,1
+	attRot0 = -0.7071066,1.065814E-14,0.707107,1.192093E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = 3
+	sqor = 5
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = liquidEngine_4276705708
+	sym = liquidEngine_4276696916
+	sym = liquidEngine_4276696548
+	sym = liquidEngine_4276696364
+	sym = liquidEngine_4276696180
+	attN = top,trussPiece1x_4276696756
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = trussPiece1x_4276696596
+	partName = Part
+	pos = -1.285557,7.416027,0.7693964
+	attPos = 0,0,0
+	attPos0 = -0.8852373,0.1213188,5.960466E-08
+	rot = -0.5000001,0.5,-0.5,-0.5000001
+	attRot = 0,0,0,1
+	attRot0 = -0.5000001,0.5,-0.5,-0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece1x_4276696572
+	sym = trussPiece1x_4276727708
+	sym = trussPiece1x_4276696964
+	sym = trussPiece1x_4276696780
+	sym = trussPiece1x_4276696412
+	sym = trussPiece1x_4276696228
+	srfN = srfAttach,trussPiece1x_4276728138
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece1x_4276696572
+	partName = Part
+	pos = -1.775558,7.132095,0.7693962
+	attPos = 0,0,0
+	attPos0 = -1.341105E-07,0.4900009,0.2839317
+	rot = -0.7071071,1.192093E-07,-0.7071066,-7.105427E-15
+	attRot = 0.7071068,0,0,0.7071068
+	attRot0 = 0.7071068,-2.384186E-07,-1.192093E-07,0.7071069
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = liquidEngine_4276696548
+	sym = trussPiece1x_4276727150
+	sym = trussPiece1x_4276696940
+	sym = trussPiece1x_4276696756
+	sym = trussPiece1x_4276696388
+	sym = trussPiece1x_4276696204
+	srfN = srfAttach,trussPiece1x_4276696596
+	attN = top,liquidEngine_4276696548
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = liquidEngine_4276696548
+	partName = Part
+	pos = -1.775558,5.670995,0.769396
+	attPos = 0,0,0
+	attPos0 = 1.569159E-07,1.4611,-1.513302E-07
+	rot = -2.980232E-08,1,0,-2.980232E-08
+	attRot = 0,0,0,1
+	attRot0 = -0.7071066,1.065814E-14,0.707107,1.192093E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = 4
+	sqor = 5
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = liquidEngine_4276705708
+	sym = liquidEngine_4276696916
+	sym = liquidEngine_4276696732
+	sym = liquidEngine_4276696364
+	sym = liquidEngine_4276696180
+	attN = top,trussPiece1x_4276696572
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = trussPiece1x_4276696412
+	partName = Part
+	pos = -0.8429387,7.416027,1.536034
+	attPos = 0,0,0
+	attPos0 = -0.4426186,0.1213188,0.7666381
+	rot = -0.6830127,0.1830127,-0.1830127,-0.6830127
+	attRot = 0,0,0,1
+	attRot0 = -0.6830127,0.1830127,-0.1830127,-0.6830127
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece1x_4276696388
+	sym = trussPiece1x_4276727708
+	sym = trussPiece1x_4276696964
+	sym = trussPiece1x_4276696780
+	sym = trussPiece1x_4276696596
+	sym = trussPiece1x_4276696228
+	srfN = srfAttach,trussPiece1x_4276728138
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece1x_4276696388
+	partName = Part
+	pos = -1.087939,7.132095,1.960388
+	attPos = 0,0,0
+	attPos0 = -1.341105E-07,0.4900009,0.2839317
+	rot = -0.965926,1.122936E-07,-0.2588188,-6.759016E-08
+	attRot = 0.7071068,0,0,0.7071068
+	attRot0 = 0.7071068,-2.384186E-07,-1.192093E-07,0.7071069
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = liquidEngine_4276696364
+	sym = trussPiece1x_4276727150
+	sym = trussPiece1x_4276696940
+	sym = trussPiece1x_4276696756
+	sym = trussPiece1x_4276696572
+	sym = trussPiece1x_4276696204
+	srfN = srfAttach,trussPiece1x_4276696412
+	attN = top,liquidEngine_4276696364
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = liquidEngine_4276696364
+	partName = Part
+	pos = -1.087939,5.670995,1.960388
+	attPos = 0,0,0
+	attPos0 = 1.569159E-07,1.4611,-1.513302E-07
+	rot = -1.490116E-08,0.8660256,6.705523E-08,-0.5000001
+	attRot = 0,0,0,1
+	attRot0 = -0.7071066,1.065814E-14,0.707107,1.192093E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = 5
+	sqor = 5
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = liquidEngine_4276705708
+	sym = liquidEngine_4276696916
+	sym = liquidEngine_4276696732
+	sym = liquidEngine_4276696548
+	sym = liquidEngine_4276696180
+	attN = top,trussPiece1x_4276696388
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = trussPiece1x_4276696228
+	partName = Part
+	pos = 0.04229844,7.416027,1.536034
+	attPos = 0,0,0
+	attPos0 = 0.4426185,0.1213188,0.7666381
+	rot = -0.6830127,-0.1830127,0.1830127,-0.6830127
+	attRot = 0,0,0,1
+	attRot0 = -0.6830127,-0.1830127,0.1830127,-0.6830127
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece1x_4276696204
+	sym = trussPiece1x_4276727708
+	sym = trussPiece1x_4276696964
+	sym = trussPiece1x_4276696780
+	sym = trussPiece1x_4276696596
+	sym = trussPiece1x_4276696412
+	srfN = srfAttach,trussPiece1x_4276728138
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece1x_4276696204
+	partName = Part
+	pos = 0.2872987,7.132095,1.960388
+	attPos = 0,0,0
+	attPos0 = -1.341105E-07,0.4900009,0.2839317
+	rot = -0.9659259,5.2689E-08,0.2588193,-1.112238E-07
+	attRot = 0.7071068,0,0,0.7071068
+	attRot0 = 0.7071068,-2.384186E-07,-1.192093E-07,0.7071069
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = liquidEngine_4276696180
+	sym = trussPiece1x_4276727150
+	sym = trussPiece1x_4276696940
+	sym = trussPiece1x_4276696756
+	sym = trussPiece1x_4276696572
+	sym = trussPiece1x_4276696388
+	srfN = srfAttach,trussPiece1x_4276696228
+	attN = top,liquidEngine_4276696180
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = liquidEngine_4276696180
+	partName = Part
+	pos = 0.2872988,5.670995,1.960388
+	attPos = 0,0,0
+	attPos0 = 1.569159E-07,1.4611,-1.513302E-07
+	rot = 1.490116E-08,0.5000002,5.215406E-08,-0.8660255
+	attRot = 0,0,0,1
+	attRot0 = -0.7071066,1.065814E-14,0.707107,1.192093E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = 6
+	sqor = 5
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = liquidEngine_4276705708
+	sym = liquidEngine_4276696916
+	sym = liquidEngine_4276696732
+	sym = liquidEngine_4276696548
+	sym = liquidEngine_4276696364
+	attN = top,trussPiece1x_4276696204
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
